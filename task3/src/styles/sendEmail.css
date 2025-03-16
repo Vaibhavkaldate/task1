@@ -1,44 +1,58 @@
 .send-email-container {
-  width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  background: #f5f5f5;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 380px;
+  margin: 80px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
 
 .send-email-container h2 {
+  font-size: 22px;
   color: #333;
+  margin-bottom: 20px;
 }
 
 .input-group {
-  margin: 10px 0;
+  margin-bottom: 15px;
   text-align: left;
 }
 
 .input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
   display: block;
-  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .input-group input {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+  padding: 10px;
+  font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
 button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background: #007bff;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 button:hover {
@@ -46,6 +60,16 @@ button:hover {
 }
 
 .message {
-  margin-top: 10px;
-  font-weight: bold;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: green;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .send-email-container {
+    width: 90%;
+    padding: 25px;
+  }
 }
