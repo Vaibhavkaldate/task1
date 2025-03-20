@@ -1,0 +1,37 @@
+/* src/styles/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #34495e; /* Dark Blue-Grey for professional look */
+    padding: 20px 25px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ecf0f1; /* Light Grey for contrast */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons span, .profile-icon {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 30px; /* Increased size */
+    transition: color 0.3s ease;
+}
+
+.notification-icon {
+    color: #f1c40f; /* Gold color */
+}
+
+
+.profile-icon:hover {
+    color:#f1c40f; 
+}
